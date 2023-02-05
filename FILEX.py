@@ -1,5 +1,5 @@
 import os
 os.system('git pull && clear')
 
-from xn import __XNX__
-xn.__XNX__()
+from project import __XNX__
+project.__XNX__()
