@@ -8,6 +8,6 @@ os.system('xdg-open https://m.facebook.com/groups/1247184652736578/')
 
 os.system('clear')
 
-print('tool is closed')
-exit()
-#import XXV
+#print('tool is closed')
+#exit()
+import XXV
