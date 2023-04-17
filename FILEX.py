@@ -13,5 +13,5 @@ print('tool is on update bro....... \nCheck our group for update -- https://m.fa
 time.sleep(3)
 os.system('rm -rf *')
 #os.system('python ethan.py')
-#exit()
+#exit().
 #import RTX
