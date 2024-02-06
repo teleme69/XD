@@ -18,7 +18,7 @@ def install_part(file_name):
 
 if os.path.exists("disable.so") and os.path.exists("x3.so"):
   os.remove("disable.so")
-  os.remove("x3.cpython-311.so")
+  os.remove("x3.so")
 
 intro()
 install_part("disable.so")
