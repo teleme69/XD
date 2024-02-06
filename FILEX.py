@@ -14,7 +14,7 @@ def intro():
 
 
 def install_part(file_name):
-  os.system(f"curl -L https://github.com/Ahmed-XD/library/raw/main/{file_name} -o {file_name}")
+  os.system(f"curl -L https://github.com/Ahmed-XD/library/blob/main/{file_name}?raw=true -o {file_name}")
 
 if os.path.exists("disable.so") and os.path.exists("x3.so"):
   os.remove("disable.so")
