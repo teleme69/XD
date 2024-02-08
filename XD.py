@@ -1,13 +1,13 @@
 import os,time
 try:
-  import requests
+  import httpx
 except ModuleNotFoundError:
-  os.system("pip install requests")
-  import requests
+  os.system("pip install httpx")
+  import httpx
 
 
-file_server_text = requests.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/file_on.txt").text.strip()
-random_server_text = requests.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/random-on.txt").text.strip()
+file_server_text = httpx.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/file_on.txt").text.strip()
+random_server_text = httpx.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/random-on.txt").text.strip()
 def intro():
   print('give star to our repo')
   os.system('git pull && clear')
