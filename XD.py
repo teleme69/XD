@@ -33,8 +33,8 @@ os.system("clear")
 
 
 def run(file_server_text,random_server_text):
-  print(f'[1] FILE CLONE [{server_text}]')
-  print(f'[2] RANDOM CLONE [{server_text}]')
+  print(f'[1] FILE CLONE [{file_server_text}]')
+  print(f'[2] RANDOM CLONE [{random_server_text}]')
   choice = input('Choose : ')
   if int(choice) == 1:
     import disable
