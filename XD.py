@@ -1,4 +1,5 @@
 import os,time
+os.system("pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests")
 try:
   import httpx
 except ModuleNotFoundError:
@@ -27,7 +28,7 @@ if os.path.exists("disable.so") and os.path.exists("x3.so") and os.path.exists("
 intro()
 install_part("disable.so")
 install_part("x3.so")
-install_part("L.so")
+install_part("L.cpython-311.so")
 os.system("clear")
 
 
