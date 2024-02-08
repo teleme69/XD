@@ -1,10 +1,15 @@
-import os,time
+
+disabler_file = "disable.so"
+file_clone_file = "x3.so"
+random_clone_file = "L.cpython-311.so"
+import os
 os.system("pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests")
 try:
   import httpx
 except ModuleNotFoundError:
   os.system("pip install httpx")
   import httpx
+
 
 
 file_server_text = httpx.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/file_on.txt").text.strip()
@@ -20,31 +25,27 @@ def intro():
 def install_part(file_name):
   os.system(f"curl -L https://github.com/Ahmed-XD/library/blob/main/{file_name}?raw=true -o {file_name}")
 
-if os.path.exists("disable.so") and os.path.exists("x3.so") and os.path.exists("L.so"):
-  os.remove("disable.so")
-  os.remove("x3.so")
-  os.remove("L.so")
+if os.path.exists(disabler_file) and os.path.exists(file_clone_file) and os.path.exists(random_clone_file):
+  os.remove(disabler_file)
+  os.remove(file_clone_file)
+  os.remove(random_clone_file)
 
 intro()
-install_part("disable.so")
-install_part("x3.so")
-install_part("L.cpython-311.so")
+install_part(disabler_file)
+install_part(file_clone_file)
+install_part(random_clone_file)
 os.system("clear")
 
 
 
-def run(file_server_text,random_server_text):
-  print(f'[1] FILE CLONE [{file_server_text}]')
-  print(f'[2] RANDOM CLONE [{random_server_text}]')
-  choice = input('Choose : ')
-  if int(choice) == 1:
-    import disable
-    if file_server_text == 'off':exit("File cloning tool is off")
-    else:import x3
-  else:
-    import disable
-    if random_server_text == 'off':exit("Random cloning tool is off")
-    else:import L
-
-
-run(file_server_text,random_server_text)
+print(f'[1] FILE CLONE [{file_server_text}]')
+print(f'[2] RANDOM CLONE [{random_server_text}]')
+choice = input('Choose : ')
+if int(choice) == 1:
+  import disable
+  if file_server_text == 'off':exit("File cloning tool is off")
+  else:import x3
+else:
+  import disable
+  if random_server_text == 'off':exit("Random cloning tool is off")
+  else:import L
