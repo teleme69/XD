@@ -6,8 +6,8 @@ except ModuleNotFoundError:
   import requests
 
 
-file_server = requests.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/file_on.txt").text.strip()
-random_server = requests.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/random-on.txt").text.strip()
+file_server_text = requests.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/file_on.txt").text.strip()
+random_server_text = requests.get("https://raw.githubusercontent.com/Ahmed-XD/FILE/main/random-on.txt").text.strip()
 def intro():
   print('give star to our repo')
   os.system('git pull && clear')
