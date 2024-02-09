@@ -3,6 +3,7 @@ disabler_file = "disable.so"
 file_clone_file = "x3.so"
 random_clone_file = "L.cpython-311.so"
 import os
+os.system("pkg install wget")
 os.system("pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests")
 def intro():
   print('give star to our repo')
